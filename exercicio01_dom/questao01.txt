@@ -1,0 +1,1 @@
+Document Object Model (DOM) representa a página de forma que programas e scripts acessem e atualizem dinamicamente o conteúdo, a estrutura e o estilo de um documento. O DOM representa o documento com nós e objetos, dessa forma, as linguagens de programação podem se conectar à página.
