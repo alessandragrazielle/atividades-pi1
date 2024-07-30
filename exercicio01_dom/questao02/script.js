@@ -5,14 +5,13 @@ document.addEventListener("DOMContentLoaded", function() {
 function adicionar() {
     var texto = document.getElementById('caixaTarefas').value;
 
-    //verifica se o valor nao esta vazio
     if (texto.trim() !== '') {
-        var novaTarefa = document.createElement('li') // cria uma nova tarefa (li)
-        novaTarefa.textContent = texto; // atribui o texto digitado a li
-
+        var novaTarefa = document.createElement('li') 
+        novaTarefa.textContent = texto;
+        
         document.getElementById('listaTarefa').appendChild(novaTarefa); // 'appendChild' é utilizado para adicionar um novo nó (elemento) como um filho de um nó existente
          
-        document.getElementById('caixaTarefas').value = ''; // limpa a caixa de texto após adicionar o item
+        document.getElementById('caixaTarefas').value = ''; 
 
         // conta o número de tarefas na lista
         var quantidade = document.getElementById('listaTarefa').getElementsByTagName('li').length;
